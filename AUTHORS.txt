@@ -1,0 +1,8 @@
+Author, target of blame:
+
+  Austin Seipp <mad [dot] one [@at] gmail [dot] com>
+
+The reference interpreter was taken from Andrew Brown:
+
+ - http://morepypy.blogspot.com/2011/04/tutorial-writing-interpreter-with-pypy.html
+ - https://bitbucket.org/brownan

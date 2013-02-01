@@ -1,0 +1,6 @@
+/VENV
+*.pyc
+__pycache__
+*~
+*.jitlog
+*.exe
