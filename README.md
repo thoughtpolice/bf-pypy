@@ -27,6 +27,6 @@ See [AUTHORS.txt](https://raw.github.com/thoughtpolice/bf-pypy/master/AUTHORS.tx
 
 MIT. See `LICENSE.txt` for terms of copyright and redistribution.
 
-[issue tracker]: http://github.com/thoughtpolice/bf-pyp/issues
+[issue tracker]: http://github.com/thoughtpolice/bf-pypy/issues
 [gh]: http://github.com/thoughtpolice/bf-pypy
 [bb]: http://bitbucket.org/thoughtpolice/bf-pypy
