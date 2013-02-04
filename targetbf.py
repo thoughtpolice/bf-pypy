@@ -1,9 +1,7 @@
-""" Execute ./bf-c <filename>
+""" A standalone brainfuck interpreter/JIT compiler.
 """
 import sys
 from rpython.rlib.streamio import open_file_as_stream
-from rpython.jit.codewriter.policy import JitPolicy
-
 from bf.jit import run
 
 def main(argv):
@@ -25,8 +23,13 @@ def main(argv):
 
 # -- Setup & Boilerplate -------------------------------------------------------
 
-def target(*args):     return main, None
-def jitpolicy(driver): return JitPolicy()
+def target(driver, args):
+    driver.exe_name = 'bf-%(backend)s'
+    return main, None
+
+def jitpolicy(driver):
+    from rpython.jit.codewriter.policy import JitPolicy
+    return JitPolicy()
 
 if __name__ == '__main__':
     main(sys.argv)
